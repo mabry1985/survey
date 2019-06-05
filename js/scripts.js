@@ -1,5 +1,21 @@
 $(document).ready(function(){
+  $("input, select, button").hover(function(){
+    $(this).addClass('animated pulse');
+});
+
+$("input, select, button").mouseout(function(){
+    $(this).removeClass('animated pulse');
+})
+
   $("#formOne").submit(function(event){
+    $( "h2" ).animate({
+    width: "70%",
+    color: '#ff0000',
+    backgroundColor: '#000000',
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 100 );
     var name = $("input#name").val();
     var favFood = $("#favFood").val();
     var gender = $("input:radio[name=gender]:checked").val();
@@ -10,5 +26,9 @@ $(document).ready(function(){
 
 
     event.preventDefault();
+  })
+
+  $("input").focus(function(){
+    $( this ).next( "span" ).css( "display", "inline" ).fadeOut( 1000 );
   })
 })

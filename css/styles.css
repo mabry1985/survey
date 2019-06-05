@@ -7,3 +7,10 @@
   color: white;
   background-color: lightgray;
 }
+input, select {
+  max-width: 30%;
+}
+
+span {
+  display: none;
+}
