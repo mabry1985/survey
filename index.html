@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="favFood">Favorite Type of Food</label>
+          <select id="favFood" class="form-control" type="text">
+            <option>Chinese</option>
+            <option>Italian</option>
+            <option>Mexican</option>
+            <option>None of the above</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="male" checked>Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="female" checked>Female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="none" checked>Not Specified
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="color">What's your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+
+        <div class="form-group">
+          <label for="born">Date of Birth</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="output">
+      </div>
+    </div>
+  </body>
+</html>
