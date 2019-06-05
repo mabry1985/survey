@@ -10,12 +10,11 @@ $("input, select, button").mouseout(function(){
   $("#formOne").submit(function(event){
     $( "h2" ).animate({
     width: "70%",
-    color: '#ff0000',
-    backgroundColor: '#000000',
+    color: '#39DF55',
     marginLeft: "0.6in",
     fontSize: "3em",
-    borderWidth: "10px"
-  }, 100 );
+    borderWidth: "10px",
+  }, 1500 );
     var name = $("input#name").val();
     var favFood = $("#favFood").val();
     var gender = $("input:radio[name=gender]:checked").val();
